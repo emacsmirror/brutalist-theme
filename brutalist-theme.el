@@ -53,7 +53,7 @@
    'brutalist
 
    ;; generic stuff
-   `(default ((t (:background ,bg :foreground ,fg :height 200))))
+   `(default ((t (:background ,bg :foreground ,fg :height 225))))
    `(button ((t (:foreground ,fg :underline t))))
    `(cursor ((t (:background ,fg :foreground "white smoke"))))
    `(custom-variable-tag ((t (:foreground ,fg :weight bold))))
