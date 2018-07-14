@@ -1,10 +1,10 @@
-;;; eink-theme.el --- E Ink color theme
+;;; brutalist-theme.el --- Brutalist theme
 
 ;; Copyright (C) 2013-2016 Marian Schubert
+;; Copyright (C) 2018 Gergely Nagy
 
-;; Author: Marian Schubert <marian.schubert@gmail.com>
-;; URL: http://github.com/maio/eink-emacs
-;; Version: 1.0
+;; Author: Marian Schubert <marian.schubert@gmail.com> & Gergely Nagy
+;; URL: https://git.madhouse-project.org/algernon/brutalist-theme.el
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,12 +21,15 @@
 
 ;;; Commentary:
 
-;; Low distraction, minimalistic color theme emulating reading
-;; on E Ink devices.
+;; Low distraction, minimalistic color theme, with minimal colors, preferring
+;; other styles of markup (italic, bold).
 
 ;;; Credits:
 
-;; Inspired by:
+;; Based on:
+;; http://github.com/maio/eink-emacs
+
+;; Which in turn was inspired by:
 ;;
 ;; https://bitbucket.org/kisom/eink.vim
 ;; https://github.com/dmand/eink.el
@@ -34,8 +37,8 @@
 
 ;;; Code:
 
-(deftheme eink
-  "Theme emulating reading on an E Ink device.")
+(deftheme brutalist
+  "Minimal, low-color, low-distraction theme.")
 
 (let ((fg "#111111")
       (fg-table "#222291")
@@ -47,10 +50,10 @@
       (bg-highlight-3 "LightGreen"))
 
   (custom-theme-set-faces
-   'eink
+   'brutalist
 
    ;; generic stuff
-   `(default ((t (:background ,bg :foreground ,fg))))
+   `(default ((t (:background ,bg :foreground ,fg :height 200))))
    `(button ((t (:foreground ,fg :underline t))))
    `(cursor ((t (:background ,fg :foreground "white smoke"))))
    `(custom-variable-tag ((t (:foreground ,fg :weight bold))))
@@ -62,15 +65,15 @@
    `(font-latex-string-face ((t (:foreground "#a9a9a9"))))
    `(font-lock-builtin-face ((t (:background ,bg :foreground ,fg))))
    `(font-lock-comment-delimiter-face ((t (:foreground "#808080"))))
-   `(font-lock-comment-face ((t (:foreground ,fg :weight bold))))
+   `(font-lock-comment-face ((t (:foreground "dim gray" :weight normal))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
-   `(font-lock-doc-face ((t (:foreground ,fg :weight semi-bold))))
+   `(font-lock-doc-face ((t (:foreground "dark green" :weight normal))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
-   `(font-lock-keyword-face ((t (:foreground ,fg))))
+   `(font-lock-keyword-face ((t (:foreground ,fg :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,fg))))
    `(font-lock-reference-face ((t (:foreground ,fg))))
-   `(font-lock-string-face ((t (:foreground ,fg))))
-   `(font-lock-type-face ((t (:foreground ,fg))))
+   `(font-lock-string-face ((t (:foreground "red"))))
+   `(font-lock-type-face ((t (:foreground ,fg :underline t))))
    `(font-lock-variable-name-face ((t (:foreground ,fg :underline nil))))
    `(font-lock-warning-face ((t (:foreground ,fg :weight bold))))
    `(fringe ((t (:background ,bg :foreground ,bg))))
@@ -83,7 +86,7 @@
    `(ido-only-match ((t (:foreground ,fg))))
    `(ido-subdir ((t (:foreground ,fg))))
    `(isearch ((t (:background "#eeeee8" :foreground ,fg))))
-   `(link ((t (:foreground ,fg))))
+   `(link ((t (:foreground "blue"))))
    `(minibuffer-prompt ((t (:foreground ,fg :weight bold))))
    `(mode-line ((t (:background ,bg-light :foreground ,fg :height 0.8))))
    `(mode-line-buffer ((t (:foreground ,fg :weight bold))))
@@ -135,6 +138,10 @@
    `(magit-diff-context-highlight ((t (:foreground ,fg))))
    `(magit-branch-local ((t (:weight bold))))
    `(magit-branch-remote ((t (:weight bold))))
+
+   `(git-commit-comment-branch ((t (:inherit link))))
+   `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face :box (:line-width 1 :color "grey75") :weight normal))))
+   `(git-commit-summary ((t (:inherit font-lock-type-face :underline nil :weight bold))))
 
    ;; diff
    `(diff-added ((t (:background "#e9ffe9"))))
@@ -234,6 +241,14 @@
    `(evil-snipe-first-match-face ((t (:foreground ,fg :background "#eeeee8"))))
    `(evil-snipe-matches-face ((t (:foreground ,fg :background ,bg-highlight-3))))
 
+   ;; evil-goggles
+   `(evil-goggles-delete-face ((t (:inherit diff-removed))))
+   `(evil-goggles-paste-face ((t (:inherit diff-added))))
+   `(evil-goggles-undo-redo-add-face ((t (:inherit diff-added))))
+   `(evil-goggles-undo-redo-change-face ((t (:inherit diff-changed))))
+   `(evil-goggles-undo-redo-remove-face ((t (:inherit diff-removed))))
+   `(evil-goggles-yank-face ((t (:inherit diff-changed))))
+
    ;; evil
    `(evil-ex-lazy-highlight ((t (:background ,bg-highlight-2))))
    `(evil-ex-substitute-matches ((t (:background ,bg-highlight-2))))
@@ -245,5 +260,6 @@
    'custom-theme-load-path
    (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'eink)
-;;; eink-theme.el ends here
+(provide-theme 'brutalist)
+
+;;; brutalist-theme.el ends here
