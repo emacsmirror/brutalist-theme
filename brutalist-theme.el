@@ -175,6 +175,10 @@
    `(magit-hash ((t (:foreground ,fg-table))))
    `(magit-head ((t (:foreground ,fg-table :underline t :weight bold))))
    `(magit-log-author ((t (:foreground ,fg-dim))))
+   `(magit-section-heading ((t (:box (:line-width 1
+                                                  :color ,fg-grey)
+                                     :weight semi-bold
+                                     :height 1.2))))
 
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
