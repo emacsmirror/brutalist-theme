@@ -44,7 +44,7 @@
 (let ((fg "#111111")
       (fg-table "#222291")
       (fg-dim "dim gray")
-      (fg-grey "grey70")
+      (fg-slight-dim "grey70")
       (bg "#fffff8")
       (bg-light "#ddddd8")
       (fg-light "#ddddd8")
@@ -177,13 +177,13 @@
    `(magit-head ((t (:foreground ,fg-table :underline t :weight bold))))
    `(magit-log-author ((t (:foreground ,fg-dim))))
    `(magit-section-heading ((t (:box (:line-width 1
-                                                  :color ,fg-grey)
+                                                  :color ,fg-slight-dim)
                                      :weight semi-bold
                                      :height 1.2))))
 
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
-                                                  :box (:line-width 1 :color ,fg-grey)
+                                                  :box (:line-width 1 :color ,fg-slight-dim)
                                                   :weight normal))))
    `(git-commit-summary ((t (:inherit font-lock-type-face :underline nil :weight bold))))
 
