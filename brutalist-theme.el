@@ -170,6 +170,7 @@
    `(magit-diff-context-highlight ((t (:foreground ,fg))))
    `(magit-branch-local ((t (:weight bold))))
    `(magit-branch-remote ((t (:weight bold))))
+   `(magit-hash ((t (:foreground ,fg-table))))
 
    `(git-commit-comment-branch ((t (:inherit link))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
