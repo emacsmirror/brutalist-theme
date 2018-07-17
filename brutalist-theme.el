@@ -232,12 +232,12 @@
    `(company-tooltip-selection ((t (:background ,bg-highlight))))
 
    ;; parens - parenface
-   '(parenface-paren-face ((t (:foreground ,fg-gray))))
-   '(parenface-curly-face ((t (:foreground ,fg-gray))))
-   '(parenface-bracket-face ((t (:foreground ,fg-gray))))
+   '(parenface-paren-face ((t (:foreground ,fg-slight-dim))))
+   '(parenface-curly-face ((t (:foreground ,fg-slight-dim))))
+   '(parenface-bracket-face ((t (:foreground ,fg-slight-dim))))
 
    ;; parens - paren-face
-   '(parenthesis ((t (:foreground ,fg-gray))))
+   '(parenthesis ((t (:foreground ,fg-slight-dim))))
 
    ;; parens - other
    `(sp-show-pair-match-face ((t (:foreground ,paren-match :weight bold))))
