@@ -129,6 +129,18 @@
    `(powerline-active1 ((t (:background "grey22" :foreground ,bg :inherit mode-line))))
    `(powerline-active2 ((t (:background "grey40" :foreground ,bg :inherit mode-line))))
 
+   ;; message-mode && notmuch
+   `(message-header-name ((t (:foreground ,fg :weight semi-bold))))
+   `(message-header-other ((t (:foreground ,fg :weight normal))))
+   `(message-header-to ((t (:inherit message-header-other))))
+   `(message-header-cc ((t (:inherit message-header-other))))
+   `(message-header-subject ((t (:inherit message-header-other :foreground ,fg-table))))
+   `(message-mml ((t (:foreground "dim gray"))))
+   `(message-cited-text ((t (:foreground "dim gray"))))
+   `(notmuch-message-summary-face ((t (:foreground ,fg))))
+   `(notmuch-tree-match-author-face ((t (:foreground ,fg))))
+   `(notmuch-tree-match-tag-face ((t (:foreground ,fg :weight normal))))
+
    ;; magit
    `(magit-header ((t (:weight semi-bold))))
    `(magit-item-mark ((t (:background ,bg-highlight))))
