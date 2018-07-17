@@ -77,10 +77,6 @@
    `(font-lock-variable-name-face ((t (:foreground ,fg :underline nil))))
    `(font-lock-warning-face ((t (:foreground ,fg :weight bold))))
    `(fringe ((t (:background ,bg :foreground ,bg))))
-   `(gnus-header-content ((t (:foreground ,fg))))
-   `(gnus-header-from ((t (:foreground ,fg))))
-   `(gnus-header-name ((t (:foreground ,fg))))
-   `(gnus-header-subject ((t (:foreground ,fg))))
    `(highlight ((t nil)))
    `(ido-first-match ((t (:foreground ,fg))))
    `(ido-only-match ((t (:foreground ,fg))))
@@ -129,7 +125,11 @@
    `(powerline-active1 ((t (:background "grey22" :foreground ,bg :inherit mode-line))))
    `(powerline-active2 ((t (:background "grey40" :foreground ,bg :inherit mode-line))))
 
-   ;; message-mode && notmuch
+   ;; message-mode, notmuch and gnus
+   `(gnus-header-content ((t (:foreground ,fg))))
+   `(gnus-header-from ((t (:foreground ,fg))))
+   `(gnus-header-name ((t (:foreground ,fg))))
+   `(gnus-header-subject ((t (:foreground ,fg))))
    `(message-header-name ((t (:foreground ,fg :weight semi-bold))))
    `(message-header-other ((t (:foreground ,fg :weight normal))))
    `(message-header-to ((t (:inherit message-header-other))))
