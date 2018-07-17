@@ -4,6 +4,7 @@
 ;; Copyright (C) 2018 Gergely Nagy
 
 ;; Author: Marian Schubert <marian.schubert@gmail.com> & Gergely Nagy
+;; Version: 0.1
 ;; URL: https://git.madhouse-project.org/algernon/brutalist-theme.el
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -264,5 +265,6 @@
    (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'brutalist)
+(provide 'brutalist-theme)
 
 ;;; brutalist-theme.el ends here
