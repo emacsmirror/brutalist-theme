@@ -70,7 +70,7 @@
    `(font-lock-doc-face ((t (:foreground "dark green" :weight normal))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,fg :weight bold))))
-   `(font-lock-preprocessor-face ((t (:foreground ,fg))))
+   `(font-lock-preprocessor-face ((t (:foreground ,fg :slant italic))))
    `(font-lock-reference-face ((t (:foreground ,fg))))
    `(font-lock-string-face ((t (:foreground "red"))))
    `(font-lock-type-face ((t (:foreground ,fg :underline t))))
