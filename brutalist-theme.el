@@ -168,11 +168,14 @@
    `(magit-section-heading ((t (:weight semi-bold :height 1.2))))
    `(magit-section-highlight ((t (:weight semi-bold))))
    `(magit-diff-context-highlight ((t (:foreground ,fg))))
-   `(magit-branch-local ((t (:weight bold))))
-   `(magit-branch-remote ((t (:weight bold))))
+   `(magit-branch-local ((t (:inherit magit-head))))
+   `(magit-branch-remote ((t (:inherit magit-head))))
+   `(magit-branch-current ((t (:inherit magit-head))))
+   `(magit-branch-remote-head ((t (:inherit magit-head))))
    `(magit-hash ((t (:foreground ,fg-table))))
+   `(magit-head ((t (:inherit magit-hash :weight bold))))
 
-   `(git-commit-comment-branch ((t (:inherit link))))
+   `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
                                                   :box (:line-width 1 :color ,fg-grey)
                                                   :weight normal))))
