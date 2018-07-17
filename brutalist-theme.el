@@ -173,7 +173,7 @@
    `(magit-branch-current ((t (:inherit magit-head))))
    `(magit-branch-remote-head ((t (:inherit magit-head))))
    `(magit-hash ((t (:foreground ,fg-table))))
-   `(magit-head ((t (:inherit magit-hash :weight bold))))
+   `(magit-head ((t (:foreground ,fg-table :underline t :weight bold))))
 
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
