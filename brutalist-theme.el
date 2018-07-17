@@ -223,15 +223,6 @@
    `(cperl-array-face ((t (:foreground ,fg))))
    `(cperl-nonoverridable-face ((t (:foreground ,fg))))
 
-   ;; rpm-spec-mode
-   `(rpm-spec-tag-face ((t (:inherit default))))
-   `(rpm-spec-package-face ((t (:inherit default))))
-   `(rpm-spec-macro-face ((t (:inherit default))))
-   `(rpm-spec-doc-face ((t (:inherit default))))
-   `(rpm-spec-var-face ((t (:inherit default))))
-   `(rpm-spec-ghost-face ((t (:inherit default))))
-   `(rpm-spec-section-face ((t (:inherit default :weight bold))))
-
    ;; linum / nlinum-relative
    `(nlinum-relative-current-face ((t (:inherit normal :weight bold))))
    `(linum ((t (:inherit normal :weight bold))))
