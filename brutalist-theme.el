@@ -245,6 +245,9 @@
    `(show-paren-match ((t (:foreground ,paren-match :weight bold))))
    `(show-paren-mismatch ((t (:background ,paren-mismatch :foreground ,paren-match :weight bold))))
 
+   ;; sh
+   `(sh-heredoc ((t (:foreground ,fg :slant italic))))
+
    ;; js2
    `(js2-function-param ((t (:foreground ,fg))))
    `(js2-external-variable ((t (:foreground ,fg))))
