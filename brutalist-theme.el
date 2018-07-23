@@ -61,8 +61,7 @@
       (powerline1 "grey22")
       (powerline2 "grey40")
 
-      (link "blue")
-      (string "red")
+      (string "blue")
       (cursor "white smoke")
 
       (paren-match "blue")
@@ -102,7 +101,7 @@
    `(ido-only-match ((t (:foreground ,fg))))
    `(ido-subdir ((t (:foreground ,fg))))
    `(isearch ((t (:background ,bg-highlight-dim :foreground ,fg))))
-   `(link ((t (:foreground ,link))))
+   `(link ((t (:foreground ,string :slant italic))))
    `(minibuffer-prompt ((t (:foreground ,fg :weight bold))))
    `(mode-line ((t (:background ,bg-light :foreground ,fg :height 0.8))))
    `(mode-line-buffer ((t (:foreground ,fg :weight bold))))
