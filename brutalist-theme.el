@@ -101,7 +101,7 @@
    `(ido-only-match ((t (:foreground ,fg))))
    `(ido-subdir ((t (:foreground ,fg))))
    `(isearch ((t (:background ,bg-highlight-dim :foreground ,fg))))
-   `(link ((t (:foreground ,string :slant italic))))
+   `(link ((t (:foreground ,string :underline t))))
    `(minibuffer-prompt ((t (:foreground ,fg :weight bold))))
    `(mode-line ((t (:background ,bg-light :foreground ,fg :height 0.8))))
    `(mode-line-buffer ((t (:foreground ,fg :weight bold))))
