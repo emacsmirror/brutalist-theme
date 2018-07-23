@@ -63,7 +63,6 @@
 
       (link "blue")
       (string "red")
-      (documentation "dark green")
       (cursor "white smoke")
 
       (paren-match "blue")
@@ -87,7 +86,7 @@
    `(font-lock-comment-face ((t (:foreground ,fg-dim :weight normal))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
-   `(font-lock-doc-face ((t (:foreground ,documentation :weight normal))))
+   `(font-lock-doc-face ((t (:foreground ,fg-dim :slant italic :weight normal))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,fg :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,fg :slant italic))))
