@@ -261,6 +261,9 @@
    ;; web-mode
    `(web-mode-current-element-highlight-face ((t (:inherit normal :weight bold :foreground ,fg))))
 
+   ;; markdown-mode
+   `(markdown-blockquote-face ((t (:foreground ,fg-table :slant normal))))
+
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
    `(yas-field-highlight-face ((t (:background ,bg-highlight-dim :foreground ,fg))))
