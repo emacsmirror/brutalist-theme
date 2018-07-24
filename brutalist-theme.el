@@ -263,6 +263,7 @@
 
    ;; markdown-mode
    `(markdown-blockquote-face ((t (:foreground ,fg-table :slant normal))))
+   `(markdown-inline-code-face ((t (:slant italic))))
 
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
