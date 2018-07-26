@@ -245,6 +245,7 @@
 
    ;; sh
    `(sh-heredoc ((t (:foreground ,fg :slant italic))))
+   `(sh-quoted-exec ((t (:inherit font-lock-string-face :weight semi-bold))))
 
    ;; js2
    `(js2-function-param ((t (:foreground ,fg))))
