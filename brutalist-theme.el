@@ -3,7 +3,7 @@
 ;; Copyright (C) 2013-2016 Marian Schubert
 ;; Copyright (C) 2018 Gergely Nagy
 
-;; Author: Marian Schubert <marian.schubert@gmail.com> & Gergely Nagy
+;; Author: Gergely Nagy
 ;; Version: 0.1
 ;; URL: https://git.madhouse-project.org/algernon/brutalist-theme.el
 
