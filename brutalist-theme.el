@@ -216,7 +216,7 @@
    `(helm-source-header ((t (:foreground ,fg :background ,bg-light :weight bold))))
    `(helm-header ((t (:foreground ,fg))))
    `(helm-selection-line ((t (:inherit region :weight bold))))
-   `(helm-selection ((t (:background ,bg-highlight))))
+   `(helm-selection ((t (:inherit hl-line))))
    `(helm-ff-directory ((t (:foreground ,fg :weight bold))))
    `(helm-ff-dotted-directory ((t (:foreground ,fg :weight bold))))
    `(helm-ff-symlink ((t (:foreground ,fg :slant italic))))
