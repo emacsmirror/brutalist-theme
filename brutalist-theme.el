@@ -291,8 +291,8 @@
 
    ;; evil
    `(evil-ex-lazy-highlight ((t (:background ,bg-highlight-2))))
-   `(evil-ex-substitute-matches ((t (:background ,bg-highlight-2))))
-   `(evil-ex-substitute-replacement ((t (:background ,bg-highlight :underline nil :foreground ,fg))))))
+   `(evil-ex-substitute-matches ((t (:background ,diff-removed-highlight))))
+   `(evil-ex-substitute-replacement ((t (:background ,diff-added-highlight :underline nil :foreground ,fg))))))
 
 ;;;###autoload
 (when load-file-name
