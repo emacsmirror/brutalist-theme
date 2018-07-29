@@ -82,10 +82,10 @@
    `(font-latex-match-variable-keywords ((t (:foreground ,fg))))
    `(font-latex-string-face ((t (:foreground ,string))))
    `(font-lock-builtin-face ((t (:background ,bg :foreground ,fg))))
-   `(font-lock-comment-face ((t (:foreground ,fg-dim :weight normal))))
+   `(font-lock-comment-face ((t (:foreground ,fg-dim))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
-   `(font-lock-doc-face ((t (:foreground ,fg-dim :slant italic :weight normal))))
+   `(font-lock-doc-face ((t (:foreground ,fg-dim :slant italic))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,fg :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,fg :slant italic))))
@@ -151,7 +151,7 @@
    `(gnus-header-name ((t (:foreground ,fg))))
    `(gnus-header-subject ((t (:foreground ,fg))))
    `(message-header-name ((t (:foreground ,fg :weight semi-bold))))
-   `(message-header-other ((t (:foreground ,fg :weight normal))))
+   `(message-header-other ((t (:foreground ,fg))))
    `(message-header-to ((t (:inherit message-header-other))))
    `(message-header-cc ((t (:inherit message-header-other))))
    `(message-header-subject ((t (:inherit message-header-other :foreground ,fg-table))))
@@ -180,8 +180,7 @@
 
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
-                                                  :box (:line-width 1 :color ,fg-slight-dim)
-                                                  :weight normal))))
+                                                  :box (:line-width 1 :color ,fg-slight-dim)))))
    `(git-commit-summary ((t (:inherit font-lock-type-face :underline nil :weight bold))))
 
    ;; diff
