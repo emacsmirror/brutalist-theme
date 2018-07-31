@@ -155,11 +155,12 @@
    `(message-header-to ((t (:inherit message-header-other))))
    `(message-header-cc ((t (:inherit message-header-other))))
    `(message-header-subject ((t (:inherit message-header-other :foreground ,fg-table))))
-   `(message-mml ((t (:foreground ,fg-dim))))
+   `(message-mml ((t (:box (:line-width 1 :color ,fg-slight-dim)))))
    `(message-cited-text ((t (:foreground ,fg-dim))))
    `(notmuch-message-summary-face ((t (:foreground ,fg))))
    `(notmuch-tree-match-author-face ((t (:foreground ,fg))))
    `(notmuch-tree-match-tag-face ((t (:foreground ,fg :weight normal))))
+   `(notmuch-wash-toggle-button ((t (:inherit message-mml))))
 
    ;; magit
    `(magit-header ((t (:weight semi-bold))))
