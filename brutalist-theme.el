@@ -97,7 +97,7 @@
    `(fringe ((t (:background ,bg :foreground ,bg))))
    `(highlight ((t nil)))
    `(lazy-highlight ((t (:background ,bg-highlight-3 :slant italic))))
-   `(hl-line ((t (:underline t :weight semi-bold))))
+   `(hl-line ((t (:box (:line-width 2 :color ,fg)))))
    `(ido-first-match ((t (:foreground ,fg))))
    `(ido-only-match ((t (:foreground ,fg))))
    `(ido-subdir ((t (:foreground ,fg))))
