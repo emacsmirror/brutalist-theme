@@ -166,7 +166,6 @@
    `(magit-header ((t (:weight semi-bold))))
    `(magit-item-mark ((t (:background ,bg-highlight))))
    `(magit-item-highlight ((t (:weight normal))))
-   `(magit-section-heading ((t (:weight semi-bold :height 1.2))))
    `(magit-diff-context-highlight ((t (:foreground ,fg))))
    `(magit-branch-local ((t (:inherit magit-head))))
    `(magit-branch-remote ((t (:inherit magit-head))))
