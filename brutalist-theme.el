@@ -177,6 +177,7 @@
    `(magit-section-heading ((t (:weight semi-bold
                                 :underline t
                                 :height 1.2))))
+   `(magit-section-highlight ((t (:fg ,fg))))
 
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
