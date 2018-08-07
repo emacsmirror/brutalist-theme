@@ -94,7 +94,7 @@
    `(font-lock-type-face ((t (:foreground ,fg :underline t))))
    `(font-lock-variable-name-face ((t (:foreground ,fg :underline nil))))
    `(font-lock-warning-face ((t (:foreground ,fg :weight bold))))
-   `(fringe ((t (:background ,bg :foreground ,bg))))
+   `(fringe ((t (:background ,bg :foreground ,fg))))
    `(highlight ((t nil)))
    `(lazy-highlight ((t (:background ,bg-highlight-3 :slant italic))))
    `(hl-line ((t (:inverse-video t))))
