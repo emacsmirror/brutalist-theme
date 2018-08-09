@@ -71,7 +71,7 @@
    'brutalist
 
    ;; generic stuff
-   `(default ((t (:background ,bg :foreground ,fg :height 225))))
+   `(default ((t (:background ,bg :foreground ,fg))))
    `(button ((t (:foreground ,fg :underline t))))
    `(cursor ((t (:background ,fg :foreground ,cursor))))
    `(custom-variable-tag ((t (:foreground ,fg :weight bold))))
