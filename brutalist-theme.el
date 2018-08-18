@@ -109,7 +109,7 @@
    `(mode-line-inactive ((t (:background ,bg-light :foreground ,bg-light :height 0.8))))
    `(mode-line-minor-mode ((t (:weight ultra-light))))
    `(modeline ((t (:background ,bg :foreground ,fg :height 0.8))))
-   `(region ((t (:background ,bg-highlight :foreground ,fg))))
+   `(region ((t (:background ,bg-highlight :foreground ,fg :inverse-video nil))))
    `(slime-repl-inputed-output-face ((t (:foreground ,fg))))
    `(whitespace-line ((t (:background ,bg-highlight-2 :foreground ,fg))))
 
