@@ -161,6 +161,7 @@
    `(notmuch-tree-match-author-face ((t (:foreground ,fg))))
    `(notmuch-tree-match-tag-face ((t (:foreground ,fg :weight normal))))
    `(notmuch-wash-toggle-button ((t (:inherit message-mml))))
+   `(notmuch-tag-flagged ((t (:inherit default))))
 
    ;; magit
    `(magit-header ((t (:weight semi-bold))))
