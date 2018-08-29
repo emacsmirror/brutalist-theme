@@ -172,6 +172,7 @@
    `(magit-branch-remote ((t (:inherit magit-head))))
    `(magit-branch-current ((t (:inherit magit-head))))
    `(magit-branch-remote-head ((t (:inherit magit-head))))
+   `(magit-tag ((t (:inherit magit-branch-local :underline nil))))
    `(magit-hash ((t (:inherit default :weight semi-bold))))
    `(magit-head ((t (:foreground ,fg-table :underline t :weight bold))))
    `(magit-log-author ((t (:foreground ,fg-dim))))
