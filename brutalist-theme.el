@@ -252,6 +252,9 @@
    ;; js2
    `(js2-function-param ((t (:foreground ,fg))))
    `(js2-external-variable ((t (:foreground ,fg))))
+   `(js2-jsdoc-type ((t (:inherit font-lock-type-face))))
+   `(js2-jsdoc-value ((t (:inherit font-lock-variable-name-face))))
+   `(js2-jsdoc-html-tag-name ((t (:inherit web-mode-html-tag-face))))
 
    ;; perl
    `(cperl-hash-face ((t (:foreground ,fg))))
