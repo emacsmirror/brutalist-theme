@@ -81,7 +81,7 @@
    `(font-latex-match-reference-keywords ((t (:foreground ,fg))))
    `(font-latex-match-variable-keywords ((t (:foreground ,fg))))
    `(font-latex-string-face ((t (:foreground ,string))))
-   `(font-lock-builtin-face ((t (:background ,bg :foreground ,fg))))
+   `(font-lock-builtin-face ((t (:foreground ,fg))))
    `(font-lock-comment-face ((t (:foreground ,fg-dim))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
