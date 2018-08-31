@@ -272,6 +272,7 @@
    `(markdown-blockquote-face ((t (:foreground ,fg-table :slant normal))))
    `(markdown-inline-code-face ((t (:slant italic))))
    `(markdown-pre-face ((t (:inherit markdown-inline-code-face))))
+   `(markdown-reference-face ((t (:inherit markdown-link-face))))
 
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
