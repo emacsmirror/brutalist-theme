@@ -1,0 +1,5 @@
+(push '("melpa" . "https://melpa.org/packages/") package-archives)
+(package-initialize)
+(package-refresh-contents)
+(unless (package-installed-p 'package-lint)
+  (package-install 'package-lint))

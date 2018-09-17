@@ -1,0 +1,27 @@
+pipeline:
+  dco:
+    group: meta
+    image: algernon/drone-plugin-dco
+
+  signature-check:
+    group: meta
+    image: algernon/drone-plugin-signature-check
+    when:
+      event: tag
+
+  bootstrap:
+    image: silex/emacs:alpine
+    commands:
+      - emacs -Q -batch --load t/init.el --load t/bootstrap.el
+
+  byte-compile:
+    group: testing
+    image: silex/emacs:alpine
+    commands:
+      - emacs -Q -batch --load t/init.el --eval "(setq byte-compile-error-on-warn t)" -f batch-byte-compile brutalist-theme.el
+
+  lint:
+    group: testing
+    image: silex/emacs:alpine
+    commands:
+      - emacs -Q -batch --load t/init.el -l package-lint.el -f package-lint-batch-and-exit brutalist-theme.el
