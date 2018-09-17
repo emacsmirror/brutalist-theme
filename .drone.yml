@@ -25,3 +25,9 @@ pipeline:
     image: silex/emacs:alpine
     commands:
       - emacs -Q -batch --load t/init.el -l package-lint.el -f package-lint-batch-and-exit brutalist-theme.el
+
+  checkdoc:
+    group: testing
+    image: silex/emacs:alpine
+    commands:
+      - emacs -Q -batch --load t/init.el --eval '(checkdoc-file "brutalist-theme.el")'
