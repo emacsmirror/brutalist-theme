@@ -17,7 +17,6 @@ pipeline:
     group: testing
     image: algernon/drone-language:emacs
     byte_compile:
-      - brutalist-theme-builder.el
       - brutalist-theme.el
       - brutalist-dark-theme.el
 
