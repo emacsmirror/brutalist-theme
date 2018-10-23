@@ -307,7 +307,10 @@
    ;; evil
    `(evil-ex-lazy-highlight ((t (:background ,bg-highlight-2))))
    `(evil-ex-substitute-matches ((t (:background ,diff-removed-highlight))))
-   `(evil-ex-substitute-replacement ((t (:background ,diff-added-highlight :underline nil :foreground ,fg))))))
+   `(evil-ex-substitute-replacement ((t (:background ,diff-added-highlight :underline nil :foreground ,fg))))
+
+   ;; auto-dim-other-buffers
+   `(auto-dim-other-buffers-face ((t (:background ,bg-light))))))
 
 (provide 'brutalist-theme-builder)
 
