@@ -39,11 +39,13 @@
 ;;; Code:
 
 (defmacro brutalist-build-theme-with-colors (brutalist-colors &rest body)
+  "Build a theme with a given set of colors. "
   (declare (indent defun))
   `(let ,brutalist-colors
      ,@body))
 
 (defun brutalist-build-custom-theme (theme-name)
+  "Build a custom brutalist theme. Colors to be specified by wrapping the call to this function in a let."
   (custom-theme-set-faces
    theme-name
 
