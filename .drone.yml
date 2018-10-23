@@ -19,7 +19,7 @@ pipeline:
     byte_compile:
       - brutalist-theme-builder.el
       - brutalist-theme.el
-      - brutalist-theme-dark.el
+      - brutalist-dark-theme.el
 
   lint:
     group: testing
@@ -27,7 +27,7 @@ pipeline:
     lint:
       - brutalist-theme-builder.el
       - brutalist-theme.el
-      - brutalist-theme-dark.el
+      - brutalist-dark-theme.el
 
   checkdoc:
     group: testing
@@ -35,4 +35,4 @@ pipeline:
     checkdoc:
       - brutalist-theme-builder.el
       - brutalist-theme.el
-      - brutalist-theme-dark.el
+      - brutalist-dark-theme.el
