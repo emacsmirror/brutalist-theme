@@ -123,8 +123,8 @@
    `(org-tag ((t (:inherit fixed-pitch :inherit bold))))
 
    ;; powerline
-   `(powerline-active1 ((t (:background ,powerline1 :foreground ,bg :inherit mode-line))))
-   `(powerline-active2 ((t (:background ,powerline2 :foreground ,bg :inherit mode-line))))
+   `(powerline-active1 ((t (:background ,powerline1 :foreground ,fg-light :inherit mode-line))))
+   `(powerline-active2 ((t (:background ,powerline2 :foreground ,fg-light :inherit mode-line))))
 
    ;; message-mode, notmuch and gnus
    `(gnus-header-content ((t (:foreground ,fg))))
