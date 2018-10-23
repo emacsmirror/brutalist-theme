@@ -16,14 +16,23 @@ pipeline:
   byte-compile:
     group: testing
     image: algernon/drone-language:emacs
-    byte_compile: brutalist-theme.el
+    byte_compile:
+      - brutalist-theme-builder.el
+      - brutalist-theme.el
+      - brutalist-theme-dark.el
 
   lint:
     group: testing
     image: algernon/drone-language:emacs
-    lint: brutalist-theme.el
+    lint:
+      - brutalist-theme-builder.el
+      - brutalist-theme.el
+      - brutalist-theme-dark.el
 
   checkdoc:
     group: testing
     image: algernon/drone-language:emacs
-    checkdoc: brutalist-theme.el
+    checkdoc:
+      - brutalist-theme-builder.el
+      - brutalist-theme.el
+      - brutalist-theme-dark.el
