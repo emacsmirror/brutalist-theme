@@ -1,4 +1,4 @@
-;;; brutalist-theme-builder.el --- Brutalist theme builder
+;;; brutalist-build.el --- Brutalist theme builder
 
 ;; Copyright (C) 2013-2016 Marian Schubert
 ;; Copyright (C) 2018 Gergely Nagy
@@ -38,12 +38,12 @@
 
 ;;; Code:
 
-(defmacro brutalist-theme-with-colors (brutalist-colors &rest body)
+(defmacro brutalist-build-theme-with-colors (brutalist-colors &rest body)
   (declare (indent defun))
   `(let ,brutalist-colors
      ,@body))
 
-(defun brutalist-apply-custom-theme (theme-name)
+(defun brutalist-build-custom-theme (theme-name)
   (custom-theme-set-faces
    theme-name
 
@@ -312,6 +312,6 @@
    ;; auto-dim-other-buffers
    `(auto-dim-other-buffers-face ((t (:background ,bg-light))))))
 
-(provide 'brutalist-theme-builder)
+(provide 'brutalist-build)
 
-;;; brutalist-theme-builder.el ends here
+;;; brutalist-build.el ends here

@@ -24,7 +24,7 @@ pipeline:
     group: testing
     image: algernon/drone-language:emacs
     lint:
-      - brutalist-theme-builder.el
+      - brutalist-build.el
       - brutalist-theme.el
       - brutalist-dark-theme.el
 
@@ -32,6 +32,6 @@ pipeline:
     group: testing
     image: algernon/drone-language:emacs
     checkdoc:
-      - brutalist-theme-builder.el
+      - brutalist-build.el
       - brutalist-theme.el
       - brutalist-dark-theme.el

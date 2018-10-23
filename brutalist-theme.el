@@ -38,12 +38,12 @@
 
 ;;; Code:
 
-(require 'brutalist-theme-builder)
+(require 'brutalist-build)
 
 (deftheme brutalist
   "Minimal, low-color, low-distraction theme (light variant).")
 
-(brutalist-theme-with-colors
+(brutalist-build-theme-with-colors
   ((fg "#111111")
    (fg-table "#222291")
    (fg-dim "dim gray")
@@ -70,7 +70,7 @@
    (paren-match "blue")
    (paren-mismatch "red"))
 
-  (brutalist-apply-custom-theme 'brutalist))
+  (brutalist-build-custom-theme 'brutalist))
 
 ;;;###autoload
 (when load-file-name
