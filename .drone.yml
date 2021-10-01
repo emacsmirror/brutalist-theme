@@ -20,14 +20,6 @@ pipeline:
       - brutalist-theme.el
       - brutalist-dark-theme.el
 
-  lint:
-    group: testing
-    image: algernon/drone-language:emacs
-    lint:
-      - brutalist-build.el
-      - brutalist-theme.el
-      - brutalist-dark-theme.el
-
   checkdoc:
     group: testing
     image: algernon/drone-language:emacs
