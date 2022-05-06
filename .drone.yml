@@ -1,32 +1,45 @@
-pipeline:
-  dco:
-    group: meta
-    image: algernon/drone-plugin-dco
+kind: pipeline
+name: meta-data
 
-  signature-check:
-    group: meta
+steps:
+  - name: dco
+    image: algernon/drone-plugin-dco
+    depends_on: [ clone ]
+
+  - name: signature-check
     image: algernon/drone-plugin-signature-check
+    depends_on: [ clone ]
+    settings:
+      keys: [ 10E65DC045EABEFCC5193A26AC1E90BAC433F68F ]
     when:
       event: tag
 
-  bootstrap:
-    image: registry.madhouse-project.org/algernon/drone-language:emacs
-    bootstrap: true
+---
+kind: pipeline
+name: build
 
-  byte-compile:
-    group: testing
+steps:
+  - name: bootstrap
     image: registry.madhouse-project.org/algernon/drone-language:emacs
-    byte_compile:
-      - brutalist-theme.el
-      - brutalist-dark-theme.el
+    settings:
+      bootstrap: true
 
-  checkdoc:
-    group: testing
+  - name: byte-compile
     image: registry.madhouse-project.org/algernon/drone-language:emacs
-    checkdoc:
-      - brutalist-build.el
-      - brutalist-theme.el
-      - brutalist-dark-theme.el
+    depends_on: [ bootstrap ]
+    settings:
+      byte_compile:
+        - brutalist-theme.el
+        - brutalist-dark-theme.el
+
+  - name: checkdoc
+    image: registry.madhouse-project.org/algernon/drone-language:emacs
+    depends_on: [ bootstrap ]
+    settings:
+      checkdoc:
+        - brutalist-build.el
+        - brutalist-theme.el
+        - brutalist-dark-theme.el
 
 image_pull_secrets:
   - registry_madhouse_project_org
