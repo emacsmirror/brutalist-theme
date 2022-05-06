@@ -10,20 +10,23 @@ pipeline:
       event: tag
 
   bootstrap:
-    image: algernon/drone-language:emacs
+    image: registry.madhouse-project.org/algernon/drone-language:emacs
     bootstrap: true
 
   byte-compile:
     group: testing
-    image: algernon/drone-language:emacs
+    image: registry.madhouse-project.org/algernon/drone-language:emacs
     byte_compile:
       - brutalist-theme.el
       - brutalist-dark-theme.el
 
   checkdoc:
     group: testing
-    image: algernon/drone-language:emacs
+    image: registry.madhouse-project.org/algernon/drone-language:emacs
     checkdoc:
       - brutalist-build.el
       - brutalist-theme.el
       - brutalist-dark-theme.el
+
+image_pull_secrets:
+  - registry_madhouse_project_org
