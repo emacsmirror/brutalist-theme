@@ -47,6 +47,8 @@ steps:
         - brutalist-build.el
         - brutalist-theme.el
         - brutalist-dark-theme.el
+      ignore_warnings:
+        - package-prefix
 
 image_pull_secrets:
   - registry_madhouse_project_org
