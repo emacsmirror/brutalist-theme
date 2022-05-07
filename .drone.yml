@@ -21,6 +21,7 @@ name: build
 steps:
   - name: byte-compile
     image: registry.madhouse-project.org/algernon/drone-language:emacs
+    pull: always
     depends_on: [ clone ]
     settings:
       byte_compile:
@@ -29,6 +30,7 @@ steps:
 
   - name: checkdoc
     image: registry.madhouse-project.org/algernon/drone-language:emacs
+    pull: always
     depends_on: [ clone ]
     settings:
       checkdoc:
@@ -38,6 +40,7 @@ steps:
 
   - name: lint
     image: registry.madhouse-project.org/algernon/drone-language:emacs
+    pull: always
     depends_on: [ clone ]
     settings:
       lint:
