@@ -41,5 +41,14 @@ steps:
         - brutalist-theme.el
         - brutalist-dark-theme.el
 
+  - name: lint
+    image: registry.madhouse-project.org/algernon/drone-language:emacs
+    depends_on: [ bootstrap ]
+    settings:
+      lint:
+        - brutalist-build.el
+        - brutalist-theme.el
+        - brutalist-dark-theme.el
+
 image_pull_secrets:
   - registry_madhouse_project_org
