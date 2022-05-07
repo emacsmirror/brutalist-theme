@@ -1,11 +1,12 @@
 ;;; brutalist-build.el --- Brutalist theme builder
 
 ;; Copyright (C) 2013-2016 Marian Schubert
-;; Copyright (C) 2018 Gergely Nagy
+;; Copyright (C) 2018-2022 Gergely Nagy
 
 ;; Author: Gergely Nagy
 ;; Version: 0.1
 ;; URL: https://git.madhouse-project.org/algernon/brutalist-theme.el
+;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
