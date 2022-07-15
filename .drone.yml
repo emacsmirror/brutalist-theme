@@ -6,14 +6,6 @@ steps:
     image: algernon/drone-plugin-dco
     depends_on: [ clone ]
 
-  - name: signature-check
-    image: algernon/drone-plugin-signature-check
-    depends_on: [ clone ]
-    settings:
-      keys: [ 10E65DC045EABEFCC5193A26AC1E90BAC433F68F ]
-    when:
-      event: tag
-
 ---
 kind: pipeline
 name: build
