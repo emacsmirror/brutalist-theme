@@ -77,7 +77,7 @@
    `(font-lock-variable-name-face ((t (:foreground ,fg :underline nil))))
    `(font-lock-warning-face ((t (:inherit error))))
    `(fringe ((t (:background ,bg :foreground ,fg))))
-   `(highlight ((t nil)))
+   `(highlight ((t (:inverse-video t))))
    `(lazy-highlight ((t (:background ,bg-highlight-3 :slant italic))))
    `(hl-line ((t (:inverse-video t))))
    `(ido-first-match ((t (:foreground ,fg))))
