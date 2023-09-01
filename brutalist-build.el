@@ -107,6 +107,7 @@
    `(org-date ((t (:foreground ,fg) :underline)))
    `(org-done ((t (:foreground ,fg-light))))
    `(org-hide ((t (:foreground ,bg))))
+   `(org-code ((t (:box (:line-width (1 . 1) :color ,bg :style flat-button)))))
    ;; use :overline to give headings more top margin
    `(org-level-1 ((t (:foreground ,fg :weight semi-bold))))
    `(org-level-2 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
