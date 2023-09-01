@@ -46,7 +46,11 @@
      ,@body))
 
 (defun brutalist-build-custom-theme (theme-name)
-  "Build a custom brutalist theme named THEME-NAME.  Colors are expected to specified by wrapping the call to this function in a let."
+  "Build a custom brutalist theme named THEME-NAME.
+
+Colors are expected to specified by wrapping the call to this
+function in a let."
+
   (custom-theme-set-faces
    theme-name
 
