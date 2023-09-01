@@ -66,7 +66,7 @@
    `(font-lock-builtin-face ((t (:foreground ,fg))))
    `(font-lock-comment-face ((t (:foreground ,fg-dim))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
-   `(font-lock-constant-face ((t (:foreground ,fg))))
+   `(font-lock-constant-face ((t (:foreground ,fg :weight bold))))
    `(font-lock-doc-face ((t (:foreground ,fg-dim :slant italic))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,fg :weight bold))))
