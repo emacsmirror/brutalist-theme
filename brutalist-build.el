@@ -56,6 +56,7 @@ function in a let."
 
    ;; generic stuff
    `(default ((t (:background ,bg :foreground ,fg))))
+   `(fringe ((t (:inherit default))))
    `(button ((t (:foreground ,fg :underline t))))
    `(cursor ((t (:background ,cursor))))
    `(custom-variable-tag ((t (:foreground ,fg :weight bold))))
