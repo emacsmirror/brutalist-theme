@@ -108,11 +108,11 @@ function in a let."
    `(org-block ((t (:foreground ,fg))))
    `(org-block-begin-line ((t (:foreground ,fg-dim))))
    `(org-block-end-line ((t (:foreground ,fg-dim))))
-   `(org-verbatim ((t (:foreground ,fg :weight semi-bold))))
    `(org-date ((t (:foreground ,fg) :underline)))
    `(org-done ((t (:foreground ,fg-light))))
    `(org-hide ((t (:foreground ,bg))))
-   `(org-code ((t (:box (:line-width (1 . 1) :color ,fg :style flat-button)))))
+   `(org-verbatim ((t (:box (:line-width (1 . 1) :color ,fg :style flat-button)))))
+   `(org-code ((t (:foreground ,fg :background ,bg-light :slant italic))))
    ;; use :overline to give headings more top margin
    `(org-level-1 ((t (:foreground ,fg :weight semi-bold))))
    `(org-level-2 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
