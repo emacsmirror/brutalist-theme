@@ -211,7 +211,7 @@ function in a let."
    `(dired-directory ((t (:weight bold))))
    `(diredfl-dir-name ((t (:inherit dired-directory))))
    `(diredfl-file-name ((t nil)))
-   `(diredfl-dir-heading ((t (:box (:line-width (1 . 1) :color ,bg :style flat-button)))))
+   `(diredfl-dir-heading ((t (:box (:line-width (1 . 1) :color ,fg :style flat-button)))))
    `(dired-subtree-depth-1-face ((t (:inherit default))))
    `(dired-subtree-depth-2-face ((t (:inherit default))))
    `(dired-subtree-depth-3-face ((t (:inherit default))))
