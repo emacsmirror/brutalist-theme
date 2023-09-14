@@ -1,7 +1,7 @@
 ;;; brutalist-dark-theme.el --- Brutalist theme, dark variant
 
 ;; Copyright (C) 2013-2016 Marian Schubert
-;; Copyright (C) 2018 Gergely Nagy
+;; Copyright (C) 2018-2023 Gergely Nagy
 
 ;; Author: Gergely Nagy
 ;; Version: 0.1
@@ -68,7 +68,7 @@
    (cursor "white smoke")
 
    (paren-match "#aaccff")
-   (paren-mismatch "red"))
+   (warning "red"))
 
   (brutalist-build-custom-theme 'brutalist-dark))
 

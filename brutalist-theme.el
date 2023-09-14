@@ -1,7 +1,7 @@
 ;;; brutalist-theme.el --- Brutalist theme
 
 ;; Copyright (C) 2013-2016 Marian Schubert
-;; Copyright (C) 2018 Gergely Nagy
+;; Copyright (C) 2018-2023 Gergely Nagy
 
 ;; Author: Gergely Nagy
 ;; Version: 0.1
@@ -67,8 +67,9 @@
    (string "blue")
    (cursor "#111111")
 
-   (paren-match "blue")
-   (paren-mismatch "red"))
+   (warning "orange red")
+
+   (paren-match "blue"))
 
   (brutalist-build-custom-theme 'brutalist))
 

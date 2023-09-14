@@ -62,7 +62,7 @@ function in a let."
    `(custom-variable-tag ((t (:foreground ,fg :weight bold))))
    `(default-italic ((t (:italic t :slant italic))))
    `(italic ((t (:slant italic))))
-   `(error ((t (:foreground ,fg :weight bold))))
+   `(error ((t (:foreground ,warning :weight bold))))
    `(font-latex-bold-face ((t (:foreground ,fg))))
    `(font-latex-italic-face ((t (:foreground ,fg :slant italic))))
    `(font-latex-match-reference-keywords ((t (:foreground ,fg))))
@@ -244,9 +244,9 @@ function in a let."
 
    ;; parens - other
    `(sp-show-pair-match-face ((t (:foreground ,paren-match :weight bold))))
-   `(sp-show-pair-mismatch-face ((t (:background ,paren-mismatch :foreground ,paren-match :weight bold))))
+   `(sp-show-pair-mismatch-face ((t (:background ,warning :foreground ,paren-match :weight bold))))
    `(show-paren-match ((t (:foreground ,paren-match :weight bold))))
-   `(show-paren-mismatch ((t (:background ,paren-mismatch :foreground ,paren-match :weight bold))))
+   `(show-paren-mismatch ((t (:background ,warning :foreground ,paren-match :weight bold))))
 
    ;; sh
    `(sh-heredoc ((t (:foreground ,fg :slant italic))))
