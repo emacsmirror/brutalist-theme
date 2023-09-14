@@ -125,7 +125,7 @@ function in a let."
    `(org-scheduled ((t (:foreground ,fg))))
    `(org-sexp-date ((t (:foreground ,fg))))
    `(org-special-keyword ((t (:foreground ,fg))))
-   `(org-todo ((t (:foreground ,fg))))
+   `(org-todo ((t (:foreground ,string))))
    `(org-verse ((t (:inherit org-block :slant italic))))
    `(org-table ((t (:foreground ,fg-table))))
    `(org-checkbox ((t (:inherit bold))))
