@@ -1,0 +1,28 @@
+name: emacs tests
+on:
+  push:
+  pull-request:
+
+jobs:
+  emacs:
+    runs-on: nixos-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: lint
+        uses: actions/emacs@main
+        with:
+          mode: lint
+          ignore-warnings: "package-prefix"
+
+      - name: checkdoc
+        uses: actions/emacs@main
+        with:
+          mode: checkdoc
+
+      - name: byte-compile
+        uses: actions/emacs@main
+        with:
+          mode: byte-compile
+          files: "brutalist-theme.el, brutalist-dark-theme.el"

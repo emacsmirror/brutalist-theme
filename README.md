@@ -1,6 +1,10 @@
 # Brutalist color theme for Emacs
 
-[![MELPA](https://melpa.org/packages/brutalist-theme-badge.svg)](https://melpa.org/#/brutalist-theme) [![CI status](https://ci.madhouse-project.org/api/badges/algernon/brutalist-theme.el/status.svg?branch=master)](https://ci.madhouse-project.org/algernon/brutalist-theme.el)
+[![MELPA](https://melpa.org/packages/brutalist-theme-badge.svg)](https://melpa.org/#/brutalist-theme) 
+[![CI status][ci:badge]][ci:link]
+
+ [ci:badge]: https://ironforge.madhouse-project.org/actions/algernon/brutalist-theme.el/badge
+ [ci:link]: https://ironforge.madhouse-project.org/actions/algernon/brutalist-theme.el/latest-log
 
 Low distraction, minimalistic color theme for Emacs.
 
