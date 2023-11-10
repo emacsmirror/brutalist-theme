@@ -67,7 +67,8 @@
    (string "blue")
    (cursor "#111111")
 
-   (warning "orange red")
+   (error "OrangeRed")
+   (warning "DarkOrange")
 
    (paren-match "blue"))
 
