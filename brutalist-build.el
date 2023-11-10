@@ -181,6 +181,7 @@ function in a let."
    `(magit-header-line ((t nil)))
    `(magit-header-line-key ((t nil)))
    `(magit-section-highlight ((t (:fg ,fg))))
+   `(magit-diff-file-heading ((t (:inherit bold))))
 
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
