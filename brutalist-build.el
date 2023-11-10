@@ -59,10 +59,11 @@ function in a let."
    `(fringe ((t (:inherit default))))
    `(button ((t (:foreground ,fg :underline t))))
    `(cursor ((t (:background ,cursor))))
-   `(custom-variable-tag ((t (:foreground ,fg :weight bold))))
+   `(custom-variable-tag ((t (:foreground ,fg :inherit bold))))
    `(default-italic ((t (:italic t :slant italic))))
    `(italic ((t (:slant italic))))
-   `(error ((t (:foreground ,warning :weight bold))))
+   `(error ((t (:foreground ,error :inherit bold))))
+   `(warning ((t (:foreground ,warning :inherit bold))))
    `(font-latex-bold-face ((t (:foreground ,fg))))
    `(font-latex-italic-face ((t (:foreground ,fg :slant italic))))
    `(font-latex-match-reference-keywords ((t (:foreground ,fg))))
@@ -71,10 +72,10 @@ function in a let."
    `(font-lock-builtin-face ((t (:foreground ,fg))))
    `(font-lock-comment-face ((t (:foreground ,fg-dim))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
-   `(font-lock-constant-face ((t (:foreground ,fg :weight bold))))
+   `(font-lock-constant-face ((t (:foreground ,fg :inherit bold))))
    `(font-lock-doc-face ((t (:foreground ,fg-dim :slant italic))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
-   `(font-lock-keyword-face ((t (:foreground ,fg :weight bold))))
+   `(font-lock-keyword-face ((t (:foreground ,fg :inherit bold))))
    `(font-lock-preprocessor-face ((t (:foreground ,fg :slant italic))))
    `(font-lock-reference-face ((t (:foreground ,fg))))
    `(font-lock-string-face ((t (:foreground ,string))))
@@ -90,9 +91,9 @@ function in a let."
    `(ido-subdir ((t (:foreground ,fg))))
    `(isearch ((t (:background ,bg-highlight-dim :foreground ,fg))))
    `(link ((t (:foreground ,string :underline t))))
-   `(minibuffer-prompt ((t (:foreground ,fg :weight bold))))
+   `(minibuffer-prompt ((t (:foreground ,fg :inherit bold))))
    `(mode-line ((t (:background ,bg-light :foreground ,fg ))))
-   `(mode-line-buffer ((t (:foreground ,fg :weight bold))))
+   `(mode-line-buffer ((t (:foreground ,fg :inherit bold))))
    `(mode-line-inactive ((t (:background ,bg-light :foreground ,bg-light))))
    `(mode-line-minor-mode ((t (:weight ultra-light))))
    `(modeline ((t (:background ,bg :foreground ,fg))))
@@ -102,9 +103,9 @@ function in a let."
 
    ;; org
    `(org-agenda-date ((t (:foreground ,fg))))
-   `(org-agenda-date-today ((t (:foreground ,fg :weight bold))))
+   `(org-agenda-date-today ((t (:foreground ,fg :inherit bold))))
    `(org-agenda-date-weekend ((t (:foreground ,fg :weight normal))))
-   `(org-agenda-structure ((t (:foreground ,fg :weight bold))))
+   `(org-agenda-structure ((t (:foreground ,fg :inherit bold))))
    `(org-block ((t (:foreground ,fg))))
    `(org-block-begin-line ((t (:foreground ,fg-dim))))
    `(org-block-end-line ((t (:foreground ,fg-dim))))
@@ -114,12 +115,12 @@ function in a let."
    `(org-verbatim ((t (:box (:line-width (1 . 1) :color ,fg :style flat-button)))))
    `(org-code ((t (:foreground ,fg :background ,bg-light :slant italic))))
    ;; use :overline to give headings more top margin
-   `(org-level-1 ((t (:foreground ,fg :weight semi-bold))))
-   `(org-level-2 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
-   `(org-level-3 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
-   `(org-level-4 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
-   `(org-level-5 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
-   `(org-level-6 ((t (:foreground ,fg :weight semi-bold :overline ,bg))))
+   `(org-level-1 ((t (:foreground ,fg :inherit bold))))
+   `(org-level-2 ((t (:foreground ,fg :inherit bold :overline ,bg))))
+   `(org-level-3 ((t (:foreground ,fg :inherit bold :overline ,bg))))
+   `(org-level-4 ((t (:foreground ,fg :inherit bold :overline ,bg))))
+   `(org-level-5 ((t (:foreground ,fg :inherit bold :overline ,bg))))
+   `(org-level-6 ((t (:foreground ,fg :inherit bold :overline ,bg))))
    `(org-link ((t (:foreground ,fg :underline t))))
    `(org-quote ((t (:foreground ,fg :slant italic :inherit org-block))))
    `(org-scheduled ((t (:foreground ,fg))))
@@ -140,7 +141,7 @@ function in a let."
    `(gnus-header-from ((t (:foreground ,fg))))
    `(gnus-header-name ((t (:foreground ,fg))))
    `(gnus-header-subject ((t (:foreground ,fg))))
-   `(message-header-name ((t (:foreground ,fg :weight semi-bold))))
+   `(message-header-name ((t (:foreground ,fg :inherit bold))))
    `(message-header-other ((t (:foreground ,fg))))
    `(message-header-to ((t (:inherit message-header-other))))
    `(message-header-cc ((t (:inherit message-header-other))))
@@ -163,7 +164,7 @@ function in a let."
    `(notmuch-tag-flagged ((t (:inherit default))))
 
    ;; magit
-   `(magit-header ((t (:weight semi-bold))))
+   `(magit-header ((t (:inherit bold))))
    `(magit-item-mark ((t (:background ,bg-highlight))))
    `(magit-item-highlight ((t (:weight normal))))
    `(magit-diff-context-highlight ((t (:foreground ,fg))))
@@ -172,10 +173,10 @@ function in a let."
    `(magit-branch-current ((t (:inherit magit-head))))
    `(magit-branch-remote-head ((t (:inherit magit-head))))
    `(magit-tag ((t (:inherit magit-branch-local :underline nil))))
-   `(magit-hash ((t (:inherit default :weight semi-bold))))
-   `(magit-head ((t (:foreground ,fg-table :underline t :weight bold))))
+   `(magit-hash ((t (:inherit default :inherit bold))))
+   `(magit-head ((t (:foreground ,fg-table :underline t :inherit bold))))
    `(magit-log-author ((t (:foreground ,fg-dim))))
-   `(magit-section-heading ((t (:weight semi-bold
+   `(magit-section-heading ((t (:inherit bold
                                 :underline t))))
    `(magit-header-line ((t nil)))
    `(magit-header-line-key ((t nil)))
@@ -184,21 +185,21 @@ function in a let."
    `(git-commit-comment-branch ((t (:inherit magit-head))))
    `(git-commit-known-pseudo-header ((t (:inherit font-lock-keyword-face
                                          :box (:line-width 1 :color ,fg-slight-dim)))))
-   `(git-commit-summary ((t (:foreground ,fg :weight bold))))
+   `(git-commit-summary ((t (:foreground ,fg :inherit bold))))
 
    ;; diff
    `(diff-added ((t (:background ,diff-added))))
    `(diff-removed ((t (:background ,diff-removed))))
    `(diff-refine-added ((t (:background ,diff-added-highlight))))
    `(diff-refine-removed ((t (:background ,diff-removed-highlight))))
-   `(magit-diff-added-highlight ((t (:weight demibold :background ,diff-added))))
+   `(magit-diff-added-highlight ((t (:inherit bold :background ,diff-added))))
    `(magit-diff-added ((t (:background ,diff-added))))
-   `(magit-diff-removed-highlight ((t (:weight demibold :background ,diff-removed))))
+   `(magit-diff-removed-highlight ((t (:inherit bold :background ,diff-removed))))
    `(magit-diff-removed ((t (:background ,diff-removed))))
 
    ;; git-timemachine
    `(git-timemachine-minibuffer-author-face ((t (:inherit default))))
-   `(git-timemachine-minibuffer-detail-face ((t (:weight bold))))
+   `(git-timemachine-minibuffer-detail-face ((t (:inherit bold))))
 
    ;; compile
    `(compilation-error ((t (:inherit error))))
@@ -208,7 +209,7 @@ function in a let."
    `(flycheck-warning ((t (:inherit warning))))
 
    ;; dired
-   `(dired-directory ((t (:weight bold))))
+   `(dired-directory ((t (:inherit bold))))
    `(diredfl-dir-name ((t (:inherit dired-directory))))
    `(diredfl-file-name ((t nil)))
    `(diredfl-dir-heading ((t (:box (:line-width (1 . 1) :color ,fg :style flat-button)))))
@@ -218,12 +219,12 @@ function in a let."
    `(dired-subtree-depth-4-face ((t (:inherit default))))
 
    ;; helm
-   `(helm-source-header ((t (:foreground ,fg :background ,bg-light :weight bold))))
+   `(helm-source-header ((t (:foreground ,fg :background ,bg-light :inherit bold))))
    `(helm-header ((t (:foreground ,fg))))
-   `(helm-selection-line ((t (:inherit region :weight bold))))
+   `(helm-selection-line ((t (:inherit region :inherit bold))))
    `(helm-selection ((t (:inherit hl-line))))
-   `(helm-ff-directory ((t (:foreground ,fg :weight bold))))
-   `(helm-ff-dotted-directory ((t (:foreground ,fg :weight bold))))
+   `(helm-ff-directory ((t (:foreground ,fg :inherit bold))))
+   `(helm-ff-dotted-directory ((t (:foreground ,fg :inherit bold))))
    `(helm-ff-symlink ((t (:foreground ,fg :slant italic))))
    `(helm-ff-executable ((t (:foreground ,fg))))
 
@@ -243,14 +244,14 @@ function in a let."
    `(parenthesis ((t (:foreground ,fg-slight-dim))))
 
    ;; parens - other
-   `(sp-show-pair-match-face ((t (:foreground ,paren-match :weight bold))))
-   `(sp-show-pair-mismatch-face ((t (:background ,warning :foreground ,paren-match :weight bold))))
-   `(show-paren-match ((t (:foreground ,paren-match :weight bold))))
-   `(show-paren-mismatch ((t (:background ,warning :foreground ,paren-match :weight bold))))
+   `(sp-show-pair-match-face ((t (:foreground ,paren-match :inherit bold))))
+   `(sp-show-pair-mismatch-face ((t (:background ,warning :foreground ,paren-match :inherit bold))))
+   `(show-paren-match ((t (:foreground ,paren-match :inherit bold))))
+   `(show-paren-mismatch ((t (:background ,warning :foreground ,paren-match :inherit bold))))
 
    ;; sh
    `(sh-heredoc ((t (:foreground ,fg :slant italic))))
-   `(sh-quoted-exec ((t (:inherit font-lock-string-face :weight semi-bold))))
+   `(sh-quoted-exec ((t (:inherit font-lock-string-face :inherit bold))))
 
    ;; js2
    `(js2-function-param ((t (:foreground ,fg))))
@@ -265,11 +266,11 @@ function in a let."
    `(cperl-nonoverridable-face ((t (:foreground ,fg))))
 
    ;; linum / nlinum-relative
-   `(nlinum-relative-current-face ((t (:inherit normal :weight bold))))
-   `(linum ((t (:inherit normal :weight bold))))
+   `(nlinum-relative-current-face ((t (:inherit bold))))
+   `(linum ((t (:inherit bold))))
 
    ;; web-mode
-   `(web-mode-current-element-highlight-face ((t (:inherit normal :weight bold :foreground ,fg))))
+   `(web-mode-current-element-highlight-face ((t (:inherit bold :foreground ,fg))))
 
    ;; markdown-mode
    `(markdown-blockquote-face ((t (:foreground ,fg-table :slant normal))))
@@ -287,7 +288,7 @@ function in a let."
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
    `(yas-field-highlight-face ((t (:background ,bg-highlight-dim :foreground ,fg))))
-   `(cider-result-overlay-face ((t (:weight bold))))
+   `(cider-result-overlay-face ((t (:inherit bold))))
 
    ;; eshell
    `(epe-dir-face ((t ( :foreground ,string))))
@@ -295,8 +296,8 @@ function in a let."
    `(eshell-ls-product ((t (:foreground ,fg-dim))))
    `(eshell-ls-archive ((t (:slant italic))))
    `(eshell-ls-symlink ((t (:underline t))))
-   `(eshell-ls-executable ((t (:weight bold))))
-   `(eshell-prompt ((t (:foreground ,fg :weight bold))))
+   `(eshell-ls-executable ((t (:inherit bold))))
+   `(eshell-prompt ((t (:foreground ,fg :inherit bold))))
 
    ;; evil-quickscope
    `(evil-quickscope-first-face ((t (:foreground ,fg :background ,bg-highlight-dim))))
