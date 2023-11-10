@@ -156,6 +156,7 @@ function in a let."
    `(notmuch-tree-match-tag-face ((t (:foreground ,fg-dim :weight normal))))
    `(notmuch-tree-match-tree-face ((t (:foreground ,string))))
    `(notmuch-tree-match-subject-face ((t (:foreground ,string))))
+   `(notmuch-tree-no-match-face ((t (:inherit notmuch-tree-match-face :foreground ,fg-dim))))
    `(notmuch-tree-no-match-date-face ((t (:inherit notmuch-tree-match-date-face :foreground ,fg-dim))))
    `(notmuch-tree-no-match-author-face ((t (:inherit notmuch-tree-match-author-face :foreground ,fg-dim))))
    `(notmuch-tree-no-match-subject-face ((t (:inherit notmuch-tree-match-subject-face :foreground ,fg-dim))))
