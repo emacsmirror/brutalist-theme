@@ -288,6 +288,10 @@ function in a let."
    `(markdown-html-tag-name-face ((t (:foreground ,fg-dim))))
    `(markdown-html-attr-name-face ((t (:foreground ,fg-dim))))
 
+   ;; Nix
+   `(nix-builtin-face ((t (:inherit italic))))
+   `(nix-attribute-face ((t (:inherit bold))))
+
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
    `(yas-field-highlight-face ((t (:background ,bg-highlight-dim :foreground ,fg))))
