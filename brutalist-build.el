@@ -289,7 +289,7 @@ function in a let."
    `(markdown-html-attr-name-face ((t (:foreground ,fg-dim))))
 
    ;; Nix
-   `(nix-builtin-face ((t (:inherit italic))))
+   `(nix-builtin-face ((t (:underline t))))
    `(nix-attribute-face ((t (:inherit bold))))
 
    ;; misc
