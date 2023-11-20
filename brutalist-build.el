@@ -292,6 +292,9 @@ function in a let."
    `(nix-builtin-face ((t (:underline t))))
    `(nix-attribute-face ((t (:inherit bold))))
 
+   ;; Tree Sitter
+   `(tree-sitter-hl-face:function.call ((t (:inherit font-lock-function-name-face :underline nil))))
+
    ;; misc
    `(idle-highlight ((t (:background ,bg-highlight))))
    `(yas-field-highlight-face ((t (:background ,bg-highlight-dim :foreground ,fg))))
