@@ -67,8 +67,10 @@
    (string "light blue")
    (cursor "white smoke")
 
-   (paren-match "#aaccff")
-   (warning "red"))
+   (error "OrangeRed")
+   (warning "red")
+
+   (paren-match "#aaccff"))
 
   (brutalist-build-custom-theme 'brutalist-dark))
 
