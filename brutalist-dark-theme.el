@@ -1,4 +1,4 @@
-;;; brutalist-dark-theme.el --- Brutalist theme, dark variant
+;;; brutalist-dark-theme.el --- Brutalist theme, dark variant -*- lexical-binding: nil -*-
 
 ;; Copyright (C) 2013-2016 Marian Schubert
 ;; Copyright (C) 2018-2023 Gergely Nagy
@@ -6,6 +6,7 @@
 ;; Author: Gergely Nagy
 ;; Version: 0.1
 ;; URL: https://git.madhouse-project.org/algernon/brutalist-theme.el
+;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

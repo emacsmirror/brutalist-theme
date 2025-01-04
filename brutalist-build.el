@@ -1,4 +1,4 @@
-;;; brutalist-build.el --- Brutalist theme builder
+;;; brutalist-build.el --- Brutalist theme builder -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2013-2016 Marian Schubert
 ;; Copyright (C) 2018-2023 Gergely Nagy
